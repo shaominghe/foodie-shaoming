@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+
+    username: root
+    password: 12345678
+    url: jdbc:mysql://127.0.0.1:3306/foodieforshop?characterEncoding=utf-8&useSSL=false
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mappers/*.xml
+  type-aliases-package: com.imooc.pojo
+logging:
+  pattern:
+    console: "[%thread] %-5level %logger{36} - %msg%n"
+
+
+
+############################################################
+#
+# mybatis mapper 配置
+#
+############################################################
+# 通用 Mapper 配置
+mapper:
+  mappers: com.imooc.my.mapper.MyMapper
+  not-empty: false    # 在进行数据库操作的的时候，判断表达式 username != null, 是否追加 username != ''
+  identity: MYSQL
