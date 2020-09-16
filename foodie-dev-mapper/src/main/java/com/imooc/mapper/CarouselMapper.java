@@ -9,7 +9,7 @@ import tk.mybatis.mapper.common.MySqlMapper;
 
 import java.util.List;
 
-public interface CarouselMapper<T> extends MyMapper<Carousel> {
+public interface CarouselMapper extends MyMapper<Carousel> {
     int countByExample(CarouselExample example);
 
     int deleteByExample(CarouselExample example);
