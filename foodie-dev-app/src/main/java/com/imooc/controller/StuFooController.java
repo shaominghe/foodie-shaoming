@@ -14,4 +14,5 @@ public class StuFooController {
     public Object getStu(int id) {
         return stuService.getStuInfo(id);
     }
+
 }
