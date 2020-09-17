@@ -13,7 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
-import tk.mybatis.mapper.entity.Example;
 
 import java.util.Date;
 import java.util.List;
@@ -34,7 +33,7 @@ public class UserServicelmpl implements UserService {
         UsersExample usersExample=new UsersExample();
         UsersExample.Criteria criteria = usersExample.createCriteria();
         criteria.andUsernameEqualTo(username);
-        Users users = usersMapper.selectOneByExample(usersExample);
+        List<Users> users = usersMapper.selectByExample(usersExample);
        return  users==null ? false : true;
     }
 
@@ -49,15 +48,15 @@ public class UserServicelmpl implements UserService {
 //            e.printStackTrace();
 //        }
 
-        Example userExample = new Example(Users.class);
-        Example.Criteria userCriteria = userExample.createCriteria();
+        UsersExample userExample = new UsersExample();
+        UsersExample.Criteria userCriteria = userExample.createCriteria();
 
-        userCriteria.andEqualTo("username", username);
-        userCriteria.andEqualTo("password", password);
+        userCriteria.andUsernameEqualTo(username);
+        userCriteria.andPasswordEqualTo( password);
 
-        Users result = usersMapper.selectOneByExample(userExample);
+        List<Users> result = usersMapper.selectByExample(userExample);
 
-        return result;
+        return result.get(0);
     }
 
     @Transactional(propagation = Propagation.REQUIRED)

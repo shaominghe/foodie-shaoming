@@ -1,0 +1,4 @@
+2020-09-17 00:08:55 INFO  Version:21 - HV000001: Hibernate Validator 6.0.16.Final
+2020-09-17 00:08:56 INFO  Application:50 - Starting Application on heshaomingdeMacBook-Pro.local with PID 20639 (/Users/heshaoming/java_structure/foodie-shaoming/foodie-dev-app/target/classes started by heshaoming in /Users/heshaoming/java_structure/foodie-shaoming)
+2020-09-17 00:08:56 INFO  Application:675 - No active profile set, falling back to default profiles: default
+2020-09-17 00:08:59 WARN  ClassPathMapperScanner:44 - No MyBatis mapper was found in '[com.imooc]' package. Please check your configuration.

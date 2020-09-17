@@ -1,0 +1,4 @@
+2020-09-17 00:11:24 INFO  ServiceLogAspect:25 - ====== 开始执行 class com.imooc.service.impl.UserServicelmpl.queryUsernameIsExist ======
+2020-09-17 00:11:40 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2020-09-17 00:11:40 WARN  DriverDataSource:68 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-09-17 00:11:40 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.

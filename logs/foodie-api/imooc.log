@@ -1,0 +1,3 @@
+2020-09-18 02:58:12 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2020-09-18 02:58:12 WARN  DriverDataSource:68 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-09-18 02:58:12 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.

@@ -7,6 +7,7 @@ public interface StuService {
      void saveStu();
      void updateStu(int id);
      void saveChildren();
+     public void deleteStu(int id);
      void saveParent();
 
 }

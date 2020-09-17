@@ -9,7 +9,7 @@ spring:
 mybatis:
   configuration:
     map-underscore-to-camel-case: true
-  mapper-locations: classpath:mappers/*.xml
+  mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.imooc.pojo
 logging:
   pattern:

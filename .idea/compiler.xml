@@ -9,13 +9,13 @@
         <module name="foodie-dev-app" />
         <module name="foodie-dev-common" />
         <module name="foodie-dev-pojo" />
+        <module name="mybatis-generator-for-imooc" />
         <module name="foodie-dev-mapper" />
         <module name="foodie-dev-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="foodie-dev-api" target="1.5" />
-      <module name="mybatis-generator-for-imooc" target="1.6" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
